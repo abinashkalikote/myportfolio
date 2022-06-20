@@ -452,7 +452,7 @@
 
   .nav-header {
     height: 7vh;
-    width: 97vw;
+    width: 100vw;
     background-color: var(--color-universal);
     display: flex;
     justify-content: space-between;

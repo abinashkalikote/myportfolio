@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -59,7 +58,7 @@
   <!-- end of navbar section -->
 
   <main>
-    <!-- this is a intro section -->
+    <!-- Home -->
     <div class="intro-section">
       <div class="intro-text">get every single solutions</div>
 
@@ -91,17 +90,20 @@
     <div class="intro-pic">
       <!-- <img src="gfhg.png" height="100px" width="100px" /> -->
       <img width="400" height="600" src="https://www.metatags.org/seo-marketing/wp-content/uploads/2017/11/img-41.png"
-        alt="" loading="lazy" srcset="
+        alt="" class="intro-picture" loading="lazy" srcset="
             https://www.metatags.org/seo-marketing/wp-content/uploads/2017/11/img-41.png         400w,
             https://www.metatags.org/seo-marketing/wp-content/uploads/2017/11/img-41-200x300.png 200w
-          " sizes="(max-width: 400px) 100vw, 400px" style="position: absolute; bottom: 0; right: 15vw; z-index: 0" />
+          " sizes="(max-width: 400px) 100vw, 400px" />
     </div>
   </main>
 
-  <!-- end of main section -->
+
+
 
   <section class="other-wrapper">
-    <!-- this is a About section -->
+
+
+    <!-- About -->
     <div class="hidden-div" id="about"></div>
 
     <section class="about">
@@ -126,7 +128,7 @@
       <div class="about-right">Something Right</div>
     </section>
 
-    <!-- this is a service section -->
+    <!-- Service -->
 
     <div class="hidden-div" id="service"></div>
     <section class="service">
@@ -142,7 +144,7 @@
       </p>
     </section>
 
-    <!-- this is a portfolio section -->
+    <!-- Portfolio -->
     <div class="hidden-div" id="portfolio"></div>
     <section class="portfolio">
       <h1>portfolio Section</h1>
@@ -157,7 +159,7 @@
       </p>
     </section>
 
-    <!-- this is a contact section -->
+    <!-- Contact -->
 
     <div class="hidden-div" id="contact"></div>
     <section class="contact">
@@ -173,10 +175,35 @@
       </p>
     </section>
   </section>
+
+  <!-- Footer -->
   <footer>
-    Copyright &copy; &nbsp;<span>Abinash Kalikote</span> &nbsp;<b>2022</b>
+    Copyright &copy;&nbsp;<b>2022</b> &nbsp;<span>Abinash Kalikote</span> 
   </footer>
 </body>
 <script src="./index.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  let scrr = window.innerWidth;
+
+  if(scrr < 720) $('.nav-wrapper').hide();
+
+  $('.nav-logo').on("click", ()=>{
+    if(scrr < 720){
+      $('.nav-wrapper').fadeToggle(250);
+    }else{
+      return;
+    }
+  })
+
+  $('.nav-wrapper ul li a').on('click', ()=>{
+    if(scrr < 720){
+      $('.nav-wrapper').hide(250);
+    }else{
+      return;
+    }
+  })
+</script>
 
 </html>

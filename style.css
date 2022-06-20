@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tiro+Devanagari+Sanskrit&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@
 
 .nav-header {
   position: fixed;
+  z-index: 99;
   height: 7vh;
   width: 100vw;
   background-color: white;
@@ -80,6 +81,8 @@ main {
 }
 
 .intro-section {
+  position: absolute;
+  z-index: 0;
   flex-basis: 40%;
   color: white;
 }
@@ -92,16 +95,43 @@ main {
   margin-bottom: 10px;
 }
 
+.intro-text-name{
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  margin-top: 1vh;
+  margin-left: 5vw;
+}
+
+.name-spinner{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin-top: 1.8vh;
+  margin-left: 2.5vw;
+  border-top: 5px solid rgb(9, 202, 9);
+  border-bottom: 5px solid rgb(243, 22, 22);
+  border-right: 5px solid yellow;
+  border-left: 5px solid white;
+  animation: round 5s linear infinite;
+}
+
+@keyframes round{
+  0%{
+    transform: rotate(0deg);
+  }100%{
+    transform: rotate(360deg);
+  }
+}
+
 .intro {
   font-family: "Courier New", Courier, monospace;
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 1px;
-  line-height: 2.5rem;
+  margin-left: 10px;
 }
 
 .intro-summary-text {
-  width: 80%;
+  width: 60%;
   margin-top: 10px;
   font-weight: 400;
   line-height: 1.5rem;

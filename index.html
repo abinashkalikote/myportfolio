@@ -8,6 +8,7 @@
   <title>Abinash Kalikote | Portfolio</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style></style>
 
@@ -108,7 +109,7 @@
 
     <section class="about">
       <!-- About Left section -->
-      <div class="about-left">
+      <div class="about-left" data-aos="fade-right">
         <img src="./about_pic.jpg" alt="My pic" />
         <span class="about-name">Abinash kalikote</span>
         <hr class="hr" color="#16ec4b" />
@@ -125,7 +126,7 @@
       </div>
 
       <!-- about right section -->
-      <div class="about-right">Something Right</div>
+      <div class="about-right" data-aos="fade-left">Something Right</div>
     </section>
 
     <!-- Service -->
@@ -184,6 +185,10 @@
 <script src="./index.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 <script>
   let scrr = window.innerWidth;
 

@@ -328,7 +328,7 @@
 
   .about-sociallinks a:hover {
     filter: contrast(1.4);
-    box-shadow: 0px 0px 100px white;
+    box-shadow: 0px 0px 100px gray;
   }
 
   /* about social links end to style */
